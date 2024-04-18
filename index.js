@@ -24,13 +24,16 @@ app.use(
     origin: ["http://localhost:4200"],
   })
 );
-
+// pathannehan28
+// 7xzcjDDQU8smHy6O
+// mongodb+srv://pathannehan28:NJejTg53WMc1ULvv@cluster0.gkvm8bh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+// mongodb+srv://pathannehan28:<password>@cluster0.gkvm8bh.mongodb.net/
 app.use(cookieParser());
 app.use(express.json());
 app.use("/api", routes);
 
 mongoose
-  .connect("mongodb://localhost:27017/jwtproject", {
+  .connect("mongodb+srv://pathannehan28:NJejTg53WMc1ULvv@cluster0.gkvm8bh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
   })
   .then(() => {
